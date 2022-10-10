@@ -125,45 +125,6 @@ function armarPedido(){
     alert("Gracias por preferirnos!.");
 }
 
-// function armarPedido(){
-//     let agregarMas = "si" 
-//     let opcionComprar
-//     while (agregarMas == "si") {
-//         opcionComprar = parseInt(prompt("que desea pedir? 1) Pizzas 2) Sandwich 3) Salir"));
-//         while (opcionComprar != 1 && opcionComprar != 2 && opcionComprar != 3) {
-//         alert("Ingrese un valor valido");
-//         opcionComprar = parseInt(prompt("que desea pedir? 1) Pizzas 2) Sandwich 3) Salir"));
-//         }
-//         switch (opcionComprar){
-//             case 1:
-//                 if(opcionComprar == 1){
-//                     let opcionPizza = prompt(`elija una denuestras pizzas Napolitana $${precioNapolitana}, Salame $${precioSalame}`).toLowerCase();
-//                     let cantidadComprar = parseInt(prompt("cuantas pizzas necesitas?"));
-//                     ingresarPizza(opcionPizza,cantidadComprar);
-//                     agregarMas = prompt("Desea agregar mas productos? si/no").toLowerCase();
-//                     while (agregarMas != "si" && agregarMas != "no") {
-//                         alert("Valor ingresado no valido. Ingrese si o no.");
-//                         agregarMas = prompt("Desea agregar mas productos? si/no").toLowerCase();
-//         }
-//     }    
-//             case 2:
-//             if (opcionComprar == 2){
-//             let opcionSandwich = prompt(`elija uno de nuestros deliciosos sandwich, Chararero $${precioChacarero}, Luco $${precioBarrosLuco}`).toLowerCase();
-//             let cantidadComprar = parseInt(prompt("cuantos sandwich necesitas?"));
-//             ingresarSandwich(opcionSandwich,cantidadComprar);
-//             agregarMas = prompt("Desea agregar mas productos? si/no").toLowerCase();
-//             while (agregarMas != "si" && agregarMas != "no") {
-//                 alert("Valor ingresado no valido. Ingrese si o no.");
-//                 agregarMas = prompt("Desea agregar mas productos? si/no").toLowerCase();
-//             }
-//         } if (opcionComprar == 3){
-//             break;
-//         }
-//     }
-//     valorCarrito(carrito);
-//     alert("Gracias por preferirnos!.");
-//     }
-// }
 
 function comprarPedido() {
     let inputComprar = parseInt(prompt("Que desea pedir? 1) Pizzas o sandwich 2) Arma tu combo 3) Salir"));
@@ -182,113 +143,8 @@ function comprarPedido() {
     }
 }
 
-/*function eligePizza() {   
-    let pizza = prompt(`Elige entre nuestras exquisitas pizzas: napolitana, salame`);
-    let direccion = prompt(`Ingresa direccion para delivery`);
-    switch (pizza) {
-        case "napolitana":
-            if(pizza == "napolitana") {
-                alert(`El precio de tu pizza napolitana es ${precioNapolitana}`);
-                let formaPago = parseInt(prompt(`Ingresa forma de pago, 1: efectivo 2: tarjeta`));
-                switch (formaPago) {
-                    case 1:
-                        alert(`El valor ${precioNapolitana} se cobrara en efectivo en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    case 2:
-                        alert(`El valor ${precioNapolitana} se te cobrara en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    default:
-                        alert(`El valor ingresado es incorrecto`);
-                        eligePizza();
-                }
-            } else {
-            }
-        case "salame":
-            if(pizza == "salame") {
-                alert(`El precio de tu pizza salame es ${precioSalame}`);
-                let formaPago = parseInt(prompt(`Ingresa forma de pago, 1: efectivo 2: tarjeta`));
-                switch (formaPago) {
-                    case 1:
-                        alert(`El valor ${precioSalame} se cobrara en efectivo en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    case 2:
-                        alert(`El valor ${precioSalame} se te cobrara en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    default:
-                        alert(`El valor ingresado es incorrecto`);
-                        eligePizza();
-                }
-            } else {
-            }
-    }
-}
-
-function eligeSandwich() {
-    let sandwich = prompt(`Elige entre nuestros exquisitos sandwich: chacarero, luco`);
-    let direccion = prompt(`Ingresa direccion para delivery`);
-    switch (sandwich) {
-        case "chacarero":
-            if(sandwich == "chacarero") {
-                alert(`El precio de tu sandwich chacarero es ${precioChacarero}`);
-                let formaPago = parseInt(prompt(`Ingresa forma de pago, 1: efectivo 2: tarjeta`));
-                switch (formaPago) {
-                    case 1:
-                        alert(`El valor ${precioChacarero} se cobrara en efectivo en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    case 2:
-                        alert(`El valor ${precioChacarero} se te cobrara en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    default:
-                        alert(`El valor ingresado es incorrecto`);
-                        eligeSandwich();
-                }
-            } else {
-            }
-        case "luco":
-            if(sandwich == "luco") {
-                alert(`El precio de tu barros luco es ${precioBarrosLuco}`);
-                let formaPago = parseInt(prompt(`Ingresa forma de pago, 1: efectivo 2: tarjeta`));
-                switch (formaPago) {
-                    case 1:
-                        alert(`El valor ${precioBarrosLuco} se cobrara en efectivo en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    case 2:
-                        alert(`El valor ${precioBarrosLuco} se te cobrara en tu domicilio, muchas gracias por tu compra!`);
-                        break;
-                    default:
-                        alert(`El valor ingresado es incorrecto`);
-                        eligeSandwich();
-                }
-            } else {
-            }
-    }
-}
-function opciones() {
-    let elegirOpcion = parseInt(prompt(`Ingresa 1 para pizzas o 2 para sandwich`));
-    switch (elegirOpcion) {
-        case 1:
-            eligePizza();
-            break;
-        case 2:
-            eligeSandwich();
-            break;
-    }
-}*/
-
-
-
 welcome();
 comprarPedido();
-
-// let nuevoPedido =0;
-// do {
-//     opciones();
-//     nuevoPedido = parseInt(prompt(`Elige la opcion 1 para hacer otro pedido o 2 para salir`));
-// } while(nuevoPedido != 2);
-//     if (nuevoPedido == 2) {
-//         alert(`Nos vemos pronto! gracias por preferirnos <3`);
-//     } else {
-// }
 
 
 
